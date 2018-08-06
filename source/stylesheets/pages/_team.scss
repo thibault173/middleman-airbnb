@@ -1,0 +1,19 @@
+#team {
+  min-height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  img {
+  height: 150px
+  }
+
+  h2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.6);
+  }
+}
+
+
