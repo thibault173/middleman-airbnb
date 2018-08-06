@@ -1,0 +1,46 @@
+.image-banner {
+  height: 400px;
+  background-size: cover;
+  background-position: 0;
+}
+
+.flat-infos {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  img {
+    height: 150px;
+  }
+  .profile {
+    text-align: center;
+    margin: 15px;
+    color: gray;
+  }
+  .infos {
+    color: black;
+  }
+
+  .infos p {
+    color: gray;
+  }
+
+
+}
+
+.booking {
+  background-color: white;
+  align-content: flex-end;
+  color: black;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  height: 200px;
+}
+
+.fa-star.active {
+  color: gold;
+}
+
+.fa-star.unactive {
+  color: gray;
+}

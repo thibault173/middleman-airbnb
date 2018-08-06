@@ -1,0 +1,13 @@
+
+
+<div class="rating">
+  <%
+      5.times do
+        if value > 0
+          %><i class="fa fa-star active"></i><%
+        else
+          %><i class="fa fa-star unactive"></i><%
+        end
+        value -= 1
+   end %>
+</div>

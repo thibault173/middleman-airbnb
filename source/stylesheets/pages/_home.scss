@@ -5,7 +5,6 @@
   display: flex;
   // align-items: center;
   justify-content: space-around;
-  text-align: center;
   padding-top: 1.5em;
   p {
     margin-top: 1.5em;
@@ -15,7 +14,7 @@
     font-weight: bold;
     font-size: 16px;
   }
-  h3 {
+  .container > h2 {
     color: black;
   }
 }

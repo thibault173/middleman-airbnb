@@ -1,0 +1,50 @@
+<!-- source/flats/show.html.erb -->
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<div class="image-banner" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');"></div>
+
+
+<!-- Inject flat data in template -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
+
+        <div class="flat-infos">
+
+          <div class="profile">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+            <p><%= owner.capitalize %></p>
+          </div>
+
+          <div class="infos">
+            <h5><%= flat.description %></h5>
+            <p><%= flat.city_name %></p>
+            <div class="rating">
+              <%  rate = flat.rating.to_i
+                  5.times do
+                    if rate > 0
+                      %><i class="fa fa-star active"></i><%
+                    else
+                      %><i class="fa fa-star unactive"></i><%
+                    end
+                    rate -= 1
+               end %>
+            </div>
+            <%= partial("layouts/rating-stars", :locals => { :value => flat.rating.to_i } ) %>
+
+          </div>
+
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4">
+      <div class="booking">
+        <h5>Book this flat</h5>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</div>
