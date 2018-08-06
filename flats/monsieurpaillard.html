@@ -6,25 +6,25 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Le Wagon - Middleman - About</title>
-    <link href="stylesheets/application-e15bca4b.css" rel="stylesheet" />
-    <script src="javascripts/application-93de88c9.js"></script>
-    <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+    <title></title>
+    <link href="../stylesheets/application-e15bca4b.css" rel="stylesheet" />
+    <script src="../javascripts/application-93de88c9.js"></script>
+    <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
 
     <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo-acc9c0ec.png" alt="logo" />
+    <img src="../images/logo-acc9c0ec.png" alt="logo" />
 
   </a>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <a href="./" class="navbar-wagon-item navbar-wagon-link">Home</a>
-    <a href="about.html" class="navbar-wagon-item navbar-wagon-link">About</a>
-    <a href="team.html" class="navbar-wagon-item navbar-wagon-link">Team</a>
+    <a href="../" class="navbar-wagon-item navbar-wagon-link">Home</a>
+    <a href="../about.html" class="navbar-wagon-item navbar-wagon-link">About</a>
+    <a href="../team.html" class="navbar-wagon-item navbar-wagon-link">Team</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
 
     <!-- Profile picture with dropdown list -->
@@ -45,35 +45,60 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="./">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="team.html">Team</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../team.html">Team</a></li>
         <li><a href="#">Messagese</a></li>
       </ul>
     </div>
   </div>
 </div>
    <!-- inject layouts/_navbar.html.erb -->
-    <div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
-    <ul class="list-inline">
-        <li>
-<a href="https://kitt.lewagon.com/alumni/ssaunier" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="img-circle" alt="Ssaunier" />
-</a>          <h2>Sébastien Saunier</h2>
-          <p>
-<a href="https://github.com/ssaunier" target="_blank">              <i class="fa fa-github"></i> ssaunier
-</a>          </p>
-        </li>
-        <li>
-<a href="https://kitt.lewagon.com/alumni/Papillard" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/Papillard" class="img-circle" alt="Papillard" />
-</a>          <h2>Boris Paillard</h2>
-          <p>
-<a href="https://github.com/Papillard" target="_blank">              <i class="fa fa-github"></i> Papillard
-</a>          </p>
-        </li>
-    </ul>
+    <!-- source/flats/show.html.erb -->
+<!-- Access data.flats with owner's name as key -->
+
+<div class="image-banner" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/london');"></div>
+
+
+<!-- Inject flat data in template -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
+
+        <div class="flat-infos">
+
+          <div class="profile">
+            <img src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard" class="img-circle" alt="Monsieurpaillard" />
+            <p>Monsieurpaillard</p>
+          </div>
+
+          <div class="infos">
+            <h5>Nice flat in Piccadilly</h5>
+            <p>London, UK</p>
+            <div class="rating">
+              <i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i>
+            </div>
+            
+
+<div class="rating">
+  <i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i>
+</div>
+
+
+          </div>
+
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4">
+      <div class="booking">
+        <h5>Book this flat</h5>
+      </div>
+    </div>
+
   </div>
+  </div>
+
 </div>
                       <!-- Page content is injected here -->
     <div class="footer">
